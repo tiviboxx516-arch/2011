@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cảm ơn thầy cô – 20/11</title>
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e6ece1;--ink:#18261f;--mut:#51635a;--card:#f6f8f2;--line:#b9c8bd;--paper:#fbfaf3;--rule:#b8d3e6;--margin:#e2706f;--pen:#1f3fb3;--chalk:#f3f0e6;--cy:#ffd76a;--cp:#ff9fb8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1614;--ink:#e7efe9;--mut:#9fb3a8;--card:#16211e;--line:#2e4139}}
+:root[data-theme="dark"]{--bg:#0e1614;--ink:#e7efe9;--mut:#9fb3a8;--card:#16211e;--line:#2e4139}
+*,*::before,*::after{box-sizing:inherit}
+html{background:var(--bg);scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.75 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+.hand,h1,h2,.k,.s,#q,.cb,#out,.sig,.cd{font-family:"Patrick Hand","Segoe Print",cursive;font-weight:400}
+:focus-visible{outline:3px solid #e2a82e;outline-offset:3px}
+
+/* Bảng đen */
+.hero{padding:clamp(56px,9vw,84px) 14px 28px}
+.frame{max-width:1000px;margin:auto;padding:clamp(8px,2vw,16px);border-radius:10px;background:linear-gradient(135deg,#b07a45,#7a4d29 55%,#9a6a3a);box-shadow:0 30px 50px -28px rgba(0,0,0,.7)}
+.board{position:relative;min-height:min(72vh,620px);display:flex;flex-direction:column;justify-content:center;gap:10px;padding:clamp(28px,6vw,64px);border-radius:4px;color:var(--chalk);background:radial-gradient(ellipse at 30% 20%,#2e413b,transparent 70%),linear-gradient(160deg,#22322d,#172320);box-shadow:inset 0 0 70px rgba(0,0,0,.6);overflow:hidden;cursor:crosshair}
+.tray{position:relative;height:12px;margin:0 -6px;border-radius:3px;background:linear-gradient(#6a4122,#3f2610)}
+.tray::before,.tray::after{content:"";position:absolute;top:-6px;height:7px;border-radius:2px;background:var(--chalk)}
+.tray::before{left:12%;width:36px}.tray::after{left:22%;width:24px;background:var(--cy)}
+.chalk{filter:url(#ch);text-shadow:0 0 5px rgba(243,240,230,.25)}
+.k{font-size:clamp(1.15rem,3vw,1.6rem);color:var(--cy);margin:0}
+h1{font-size:clamp(2.9rem,11vw,6.8rem);line-height:1;margin:0}
+.s{font-size:clamp(1.3rem,4vw,2.3rem);line-height:1.25;color:var(--cp);margin:0}
+.chalk i{font-style:normal;opacity:0}.chalk i.on{opacity:1}
+.ul{width:min(420px,70%);height:14px;overflow:visible;filter:url(#ch)}
+.ul path{fill:none;stroke:var(--cy);stroke-width:3;stroke-linecap:round}
+.js .ul path{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1s ease}
+.done .ul path{stroke-dashoffset:0}
+.g{position:absolute;opacity:.12;font-size:1.7rem;pointer-events:none;user-select:none}
+.fl{position:absolute;right:20px;bottom:16px;width:92px;filter:url(#ch);pointer-events:none}
+.js .after{opacity:0;transition:opacity .9s}.done .after{opacity:1}
+.cd{margin:14px 0 0;font-size:1.2rem;opacity:.85;max-width:30em}
+.act{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:6px}
+.cb{display:inline-block;font-size:1.25rem;line-height:1.3;color:var(--chalk);background:none;border:2px dashed rgba(243,240,230,.7);border-radius:12px;padding:8px 20px;cursor:pointer;text-decoration:none}
+.cb:hover{background:rgba(255,255,255,.08)}
+.cb.y{color:var(--cy);border-color:var(--cy)}
+#cnt{font-size:1.1rem;color:var(--cp)}
+
+/* Nội dung */
+.wrap{max-width:760px;margin:0 auto;padding:72px 22px 0}
+h2{font-size:clamp(2rem,6vw,3rem);line-height:1.15;margin:0 0 20px}
+.letter p{max-width:62ch;margin:0 0 1.1em}
+.sig{font-size:1.5rem;margin:1.2em 0 0}
+.slate{padding:30px clamp(22px,5vw,48px) 24px;border:8px solid #8a5a31;border-radius:6px;background:linear-gradient(160deg,#22322d,#172320);color:var(--chalk);box-shadow:inset 0 0 50px rgba(0,0,0,.55)}
+#q{font-size:clamp(1.6rem,4.5vw,2.5rem);line-height:1.3;margin:0 0 16px;min-height:3.9em;transition:opacity .25s}
+
+/* Trang vở */
+.gen{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:36px;align-items:start;margin-top:26px}
+label{display:block;font-weight:600;font-size:.92rem;margin:0 0 6px}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:11px 12px;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip,.btn{font:inherit;font-weight:600;cursor:pointer}
+.chip{font-size:.92rem;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.nb{position:relative;padding:32px 20px 32px 62px;background:var(--paper) repeating-linear-gradient(to bottom,transparent 0 31px,var(--rule) 31px 32px);border-radius:4px 14px 14px 4px;box-shadow:0 18px 40px -22px rgba(0,0,0,.55)}
+.nb::before{content:"";position:absolute;left:44px;top:0;bottom:0;width:2px;background:var(--margin)}
+#out{margin:0;min-height:384px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:1.4rem;line-height:32px;color:var(--pen)}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.btn{padding:11px 22px;border-radius:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--bg)}
+.btn.o{background:none;color:var(--ink)}
+footer{padding:72px 22px 40px;text-align:center;color:var(--mut)}
+.th{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:14px;z-index:40;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font-size:1.1rem;cursor:pointer}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:60;transform:translate(-50%,20px);opacity:0;transition:.3s;background:#18261f;color:#f3f0e6;padding:10px 18px;border-radius:999px;font-size:.95rem;max-width:90vw;text-align:center}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@media (max-width:760px){.gen{grid-template-columns:1fr}.fl{width:64px}.g{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.ul path{stroke-dashoffset:0!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="ch"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/></filter></svg>
+<canvas id="fx" aria-hidden="true"></canvas>
+<button class="th" id="th" aria-label="Đổi giao diện sáng hoặc tối">◐</button>
+
+<header class="hero">
+  <div class="frame">
+    <div class="board" id="board">
+      <span class="g" style="top:18px;right:26px">a² + b² = c²</span>
+      <span class="g" style="top:26%;left:calc(100% - 150px)">E = mc²</span>
+      <span class="g" style="bottom:22%;right:26px">H₂O</span>
+      <p class="k chalk" id="k">Ngày Nhà giáo Việt Nam, 20/11</p>
+      <h1 class="chalk" id="h">Cảm ơn thầy cô</h1>
+      <svg class="ul" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 9 C40 2 80 13 120 7 S210 3 297 8"/></svg>
+      <p class="s chalk" id="s">đã dạy em viết những dòng đầu tiên.</p>
+      <p class="cd after" id="cd" aria-live="off"></p>
+      <div class="act after">
+        <button class="cb y" id="gift">Tặng một đóa hoa</button>
+        <a class="cb" href="#viet">Viết lời chúc</a>
+        <span id="cnt" class="hand"></span>
+      </div>
+      <svg class="fl" viewBox="-30 -30 60 60" aria-hidden="true"><g fill="none" stroke="#ff9fb8" stroke-width="2" stroke-linecap="round"><ellipse rx="6" ry="13" cy="-13"/><ellipse rx="6" ry="13" cy="-13" transform="rotate(72)"/><ellipse rx="6" ry="13" cy="-13" transform="rotate(144)"/><ellipse rx="6" ry="13" cy="-13" transform="rotate(216)"/><ellipse rx="6" ry="13" cy="-13" transform="rotate(288)"/><circle r="5" stroke="#ffd76a"/></g></svg>
+    </div>
+    <div class="tray"></div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap letter" aria-labelledby="t1">
+    <h2 id="t1">Thư gửi thầy cô</h2>
+    <p>Có những người không đứng trên sân khấu, nhưng lại thắp sáng cả một chặng đường dài. Đó là thầy cô, người đến lớp từ rất sớm, ra về rất muộn, và mang nỗi lo của hàng chục đứa học trò về tận nhà.</p>
+    <p>Chúng em từng nghịch ngợm, mải chơi, đôi khi chưa hiểu hết một ánh mắt nghiêm khắc. Càng lớn, chúng em càng hiểu: mỗi lần thầy cô nhắc nhở là một lần thầy cô thương.</p>
+    <p>Nhân ngày 20/11, xin gửi đến thầy cô lời cảm ơn chân thành nhất. Chúc thầy cô thật nhiều sức khỏe, bình an và niềm vui, để năm nào cũng còn những chuyến đò, và năm nào cũng còn chúng em quay về.</p>
+    <p class="sig">Những học trò của thầy cô</p>
+  </section>
+
+  <section class="wrap" aria-label="Lời dạy xưa">
+    <div class="slate">
+      <p id="q" class="chalk">“Không thầy đố mày làm nên.”</p>
+      <button class="cb" id="nq">Đọc câu khác</button>
+    </div>
+  </section>
+
+  <section class="wrap" id="viet" style="max-width:980px" aria-labelledby="t2">
+    <h2 id="t2">Trang vở của em</h2>
+    <p style="margin:0;max-width:56ch">Chọn cách xưng hô, thêm tên nếu muốn, rồi sao chép lời chúc để gửi cho thầy cô.</p>
+    <div class="gen">
+      <form onsubmit="return false">
+        <label for="who">Em gọi là</label>
+        <select id="who"><option>Cô</option><option>Thầy</option><option>Thầy cô</option></select>
+        <label for="nm">Tên thầy hoặc cô (không bắt buộc)</label>
+        <input id="nm" placeholder="Ví dụ: Lan" autocomplete="off">
+        <label for="fr">Người gửi (không bắt buộc)</label>
+        <input id="fr" placeholder="Ví dụ: Minh Anh, lớp 9A" autocomplete="off">
+        <label id="tl">Giọng văn</label>
+        <div class="chips" role="group" aria-labelledby="tl">
+          <button type="button" class="chip" data-t="c" aria-pressed="true">Chân thành</button>
+          <button type="button" class="chip" data-t="v" aria-pressed="false">Vui vẻ</button>
+          <button type="button" class="chip" data-t="t" aria-pressed="false">Thơ</button>
+        </div>
+      </form>
+      <div>
+        <div class="nb"><p id="out" aria-live="polite"></p></div>
+        <div class="row">
+          <button class="btn" id="copy">Sao chép lời chúc</button>
+          <button class="btn o" id="nx">Đổi lời chúc</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="hand" style="font-size:1.4rem;margin:0">Gửi những người lái đò thầm lặng.</p>
+  <p style="margin:.4em 0 0">Chúc thầy cô ngày 20/11 thật nhiều sức khỏe và niềm vui.</p>
+</footer>
+<div id="toast" role="status"></div>
+
+<script>
+const $=s=>document.querySelector(s),R=document.documentElement,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+
+/* Giao diện sáng/tối */
+$('#th').onclick=()=>{const d=R.dataset.theme?R.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;R.dataset.theme=d?'light':'dark'};
+
+/* Chữ phấn viết dần lên bảng */
+function split(el){const t=el.textContent.normalize('NFC');el.setAttribute('aria-label',t);el.innerHTML=[...t].map(c=>c===' '?' ':'<i aria-hidden="true">'+c+'</i>').join('');return[...el.children]}
+async function write(el,ms){for(const c of split(el)){c.classList.add('on');await sleep(ms)}}
+(async()=>{
+  const els=[['#k',34],['#h',70],['#s',32]];
+  if(rm){els.forEach(([s])=>split($(s)).forEach(c=>c.classList.add('on')))}
+  else for(const [s,ms] of els)await write($(s),ms);
+  $('#board').classList.add('done');
+})();
+
+/* Đếm ngược đến 20/11 */
+function cd(){const n=new Date(),y=n.getFullYear();
+  if(n.getMonth()===10&&n.getDate()===20)return'Hôm nay là 20/11. Chúc mừng ngày của thầy cô!';
+  let t=new Date(y,10,20);if(n>t)t=new Date(y+1,10,20);
+  const s=Math.floor((t-n)/1000);
+  return'Còn '+(s/86400|0)+' ngày '+(s%86400/3600|0)+' giờ '+(s%3600/60|0)+' phút '+(s%60)+' giây nữa là đến ngày của thầy cô.'}
+const tick=()=>{$('#cd').textContent=cd()};tick();setInterval(tick,1000);
+
+/* Cánh hoa rơi (chỉ chạy khi có người bấm) */
+const cv=$('#fx'),cx=cv.getContext('2d'),P=[],cols=['#ff9fb8','#ffc7d6','#ffd76a','#fff3d6','#ff7f9f'];
+let W,H,run=false;
+function rs(){const D=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0)}
+addEventListener('resize',rs);rs();
+function burst(x,y,n){n=rm?8:(n||44);for(let i=0;i<n;i++){const a=Math.random()*6.283,s=2+Math.random()*6;P.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-4,r:6+Math.random()*7,a:Math.random()*6.283,w:(Math.random()-.5)*.12,f:Math.random()*6.283,c:cols[i%5],o:1})}
+  if(!run){run=true;requestAnimationFrame(step)}}
+function step(){cx.clearRect(0,0,W,H);
+  for(let i=P.length-1;i>=0;i--){const p=P[i];
+    p.vx*=.985;p.vy=p.vy*.985+.12;p.x+=p.vx+Math.sin(p.f+=.07)*.6;p.y+=p.vy;p.a+=p.w;p.o-=.006;
+    if(p.o<=0||p.y>H+30){P.splice(i,1);continue}
+    cx.save();cx.globalAlpha=p.o;cx.translate(p.x,p.y);cx.rotate(p.a);cx.scale(1,.55+.45*Math.abs(Math.sin(p.f)));
+    cx.fillStyle=p.c;cx.beginPath();cx.ellipse(0,0,p.r,p.r*.55,0,0,6.283);cx.fill();cx.restore()}
+  if(P.length)requestAnimationFrame(step);else{run=false;cx.clearRect(0,0,W,H)}}
+let n=0;
+$('#gift').onclick=e=>{n++;const r=e.currentTarget.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,60);$('#cnt').textContent='Đã tặng '+n+' đóa hoa'};
+$('#board').addEventListener('pointerdown',e=>{if(!e.target.closest('button,a'))burst(e.clientX,e.clientY,22)});
+
+/* Lời dạy xưa */
+const Q=['“Không thầy đố mày làm nên.”','“Muốn sang thì bắc cầu kiều, muốn con hay chữ thì yêu lấy thầy.”','“Một chữ cũng là thầy, nửa chữ cũng là thầy.”','“Tôn sư trọng đạo.”','“Uống nước nhớ nguồn.”'];
+let qi=0;$('#nq').onclick=()=>{const q=$('#q');q.style.opacity=0;setTimeout(()=>{qi=(qi+1)%Q.length;q.textContent=Q[qi];q.style.opacity=1},250)};
+
+/* Trang vở: tạo lời chúc */
+const T={
+c:[(p,P)=>`Nhân ngày Nhà giáo Việt Nam 20/11, em xin gửi đến ${p} lời tri ân chân thành nhất. Cảm ơn ${p} đã kiên nhẫn dạy em từng con chữ và cả cách làm người. Những điều ${p} trao, em sẽ mang theo suốt cuộc đời. Chúc ${p} luôn mạnh khỏe, hạnh phúc và mãi giữ ngọn lửa nhiệt huyết ạ.`,
+   (p,P)=>`Có những bài học nghe một lần là nhớ, nhưng công ơn của ${p} thì em nhớ cả đời. Cảm ơn ${p} đã tin em, ngay cả những lúc chính em chưa tin vào mình. Chúc ${p} một ngày 20/11 thật ấm áp bên những học trò luôn thương quý ${p}.`,
+   (p,P)=>`Em không biết nói sao cho đủ, chỉ biết rằng nhờ có ${p}, mỗi ngày em đều lớn lên thêm một chút. Kính chúc ${p} thật nhiều sức khỏe, niềm vui và bình an. Em luôn biết ơn ${p} ạ.`],
+v:[(p,P)=>`Chúc ${p} một ngày 20/11 thật vui: ít bài để chấm, nhiều hoa để ngắm và không bị học trò làm đau đầu! Cảm ơn ${p} đã bao dung em suốt một năm qua. Em hứa hôm nay sẽ không nói chuyện riêng trong giờ (chỉ hôm nay thôi ạ).`,
+   (p,P)=>`Nếu kiến thức là kho báu thì ${p} chính là tấm bản đồ. Cảm ơn ${p} đã dẫn đường cho em đi đúng hướng. Chúc ${p} luôn trẻ, luôn khỏe và luôn được điểm mười trong lòng học trò!`,
+   (p,P)=>`Hôm nay em chỉ nộp một bài duy nhất: lời cảm ơn thật to gửi ${p}. Chúc ${p} dồi dào sức khỏe, ngập tràn niềm vui và ít học trò quên bài. Em thương ${p} nhiều lắm!`],
+t:[(p,P)=>`Bao năm phấn trắng bảng đen,\nLời ${p} dạy vẫn bên em mỗi ngày.\nTri ân ngày hội hôm nay,\nEm xin chúc ${p} niềm vui đong đầy.`,
+   (p,P)=>`Con đò lặng lẽ sang sông,\n${P} đưa em đến cánh đồng ước mơ.\nMai này dù có xa bờ,\nLòng em ghi nhớ ơn ${p} tháng ngày.`]};
+let tone='c',idx=0;
+function build(){
+  const P=$('#who').value,p=P.toLowerCase(),nm=$('#nm').value.trim(),fr=$('#fr').value.trim(),a=T[tone];
+  $('#out').textContent='Ngày 20 tháng 11 năm '+new Date().getFullYear()+'\n\nKính gửi '+(P+' '+nm).trim()+',\n\n'+a[idx%a.length](p,P)+'\n\n— '+(fr||'Học trò của '+p)}
+['#who','#nm','#fr'].forEach(s=>$(s).addEventListener('input',build));
+document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{tone=b.dataset.t;idx=0;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));build()});
+$('#nx').onclick=()=>{idx++;build()};
+build();
+
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2400)}
+$('#copy').onclick=async()=>{
+  const txt=$('#out').textContent;let ok=false;
+  try{await navigator.clipboard.writeText(txt);ok=true}
+  catch(e){try{const a=document.createElement('textarea');a.value=txt;document.body.appendChild(a);a.select();ok=document.execCommand('copy');a.remove()}catch(e2){}}
+  toast(ok?'Đã sao chép lời chúc!':'Chưa sao chép được, hãy bôi đen và sao chép thủ công.');
+  if(ok)burst(innerWidth/2,innerHeight-80,30)};
+</script>
+</body>
+</html>
