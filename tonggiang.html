@@ -130,27 +130,6 @@ box-shadow:0 22px 44px -30px rgba(90,64,26,.55);font:500 clamp(1.1rem,2.7vw,1.3r
 background:radial-gradient(120% 80% at 50% 120%,#d7ecc3,transparent 60%),linear-gradient(180deg,#fffbe9,#f3f8e8)}
 .fl{position:absolute;line-height:1;pointer-events:none;transform:translate(-50%,-50%);animation:flb 1s cubic-bezier(.2,1.6,.4,1) both,fls 4s ease-in-out infinite alternate}
 @keyframes flb{from{transform:translate(-50%,-50%) scale(0) rotate(-120deg)}}@keyframes fls{from{rotate:-6deg}to{rotate:6deg}}
-.med{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.6vw,16px)}
-.ph,.vd{position:relative;display:block;margin:0;padding:0;border:0;border-radius:20px;overflow:hidden;background:#0d1a17;
-box-shadow:0 26px 50px -34px rgba(60,40,10,.75)}
-.ph{grid-column:span 3;aspect-ratio:3/2;cursor:zoom-in}
-.vids{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:clamp(10px,1.6vw,16px);justify-content:center;align-items:center;margin-top:clamp(10px,1.6vw,16px)}
-.vd{flex:0 1 210px;aspect-ratio:var(--ar,9/16)}
-.vd.wide{flex:1 1 100%;max-width:640px;aspect-ratio:16/9}
-.ph img,.vd video{display:block;width:100%;height:100%;object-fit:cover}
-.vd video{object-fit:contain;background:#0d1a17}
-.ph:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.vp{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;transition:opacity .3s;
-background:linear-gradient(180deg,rgba(8,20,17,.05),rgba(8,20,17,.4))}
-.vp i{position:relative;width:58px;height:58px;border-radius:50%;background:rgba(255,251,242,.94);box-shadow:0 10px 28px rgba(0,0,0,.4)}
-.vp i::after{content:'';position:absolute;left:23px;top:19px;border-left:16px solid #7a4f0d;border-top:10px solid transparent;border-bottom:10px solid transparent}
-.vd.on .vp{opacity:0}
-.lb{position:fixed;inset:0;margin:auto;max-width:94vw;max-height:92vh;padding:0;border:0;background:transparent;overflow:visible}
-.lb::backdrop{background:rgba(6,14,12,.88)}
-.lb img{display:block;max-width:94vw;max-height:86vh;border-radius:14px;background:#fff;box-shadow:0 40px 90px -20px #000}
-.lbx{position:absolute;top:-16px;right:-16px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(233,189,98,.6);
-background:#0f2a24;color:#f7e6bd;font:300 1.4rem/1 var(--sans);cursor:pointer}
-@media(max-width:760px){.med{grid-template-columns:1fr}.ph{grid-column:1/-1;aspect-ratio:4/3}.vids{justify-content:flex-start}}
 .fin h2{font-size:clamp(2.8rem,10vw,6.4rem)}
 .fin{text-align:center}
 .btn{margin-top:1.4rem;padding:1.05rem 2.3rem;border-radius:99px;border:1px solid rgba(185,128,31,.55);background:linear-gradient(135deg,#fbe7b4,#f0c466);color:#4a3009;font:500 1.05rem var(--sans);cursor:pointer;box-shadow:0 18px 40px -18px rgba(185,128,31,.75);transition:transform .25s}
@@ -172,7 +151,7 @@ background:#0f2a24;color:#f7e6bd;font:300 1.4rem/1 var(--sans);cursor:pointer}
         <p id="t1"></p>
         <p id="t2"></p>
         <button class="stampbtn" id="stampBtn" type="button">Đóng dấu 10 điểm</button>
-        <div class="sig">Tống Đức Giang<small>Lớp 10A8</small></div>
+        <div class="sig">La Minh Khánh<small>Lớp 10A8</small></div>
       </section>
       <div class="cover" id="cover" role="button" tabindex="0" aria-label="Mở thiệp">
         <div class="face front">
@@ -190,36 +169,6 @@ background:#0f2a24;color:#f7e6bd;font:300 1.4rem/1 var(--sans);cursor:pointer}
 <p class="hint" id="hint">Chạm vào thiệp để mở</p>
 
 <div id="pg" aria-hidden="true"></div>
-<section class="sec" id="moments"><div class="wrap">
-<h2 class="rv">Khoảnh khắc</h2>
-<p class="sub rv">Vài tấm ảnh và thước phim nhỏ, gửi kèm lá thư.</p>
-<div class="med">
-  <button class="ph rv" type="button" aria-label="Xem ảnh lớn: lớp dưới sân trường">
-    <img src="anh.jpg" alt="Lớp 10A8 chụp ảnh dưới sân trường" loading="lazy" decoding="async">
-  </button>
-  <button class="ph rv" type="button" style="--d:.1s" aria-label="Xem ảnh lớn: một ngày sinh nhật trong lớp">
-    <img src="anh2.jpg" alt="Cả lớp quây quần trong buổi sinh nhật ngay tại lớp" loading="lazy" decoding="async">
-  </button>
-  <div class="vids">
-    <figure class="vd rv" style="--d:.15s">
-      <video src="video.mp4" poster="poster1.jpg" preload="none" playsinline controls></video>
-      <span class="vp" aria-hidden="true"><i></i></span>
-    </figure>
-    <figure class="vd rv" style="--d:.25s">
-      <video src="video3.mp4" poster="poster3.jpg" preload="none" playsinline controls></video>
-      <span class="vp" aria-hidden="true"><i></i></span>
-    </figure>
-    <figure class="vd wide rv" style="--d:.35s">
-      <video src="video2.mp4" poster="poster2.jpg" preload="none" playsinline controls></video>
-      <span class="vp" aria-hidden="true"><i></i></span>
-    </figure>
-  </div>
-</div>
-</div></section>
-<dialog class="lb" id="lb" aria-label="Xem ảnh lớn">
-  <button class="lbx" type="button" aria-label="Đóng">×</button>
-  <img id="lbimg" alt="">
-</dialog>
 <section class="sec"><div class="wrap">
 <h2 class="rv">Mười lời chúc điểm 10</h2><p class="sub rv">Chạm vào từng lời chúc nhé.</p>
 <div class="grid" id="wishes"></div></div></section>
@@ -235,7 +184,7 @@ background:#0f2a24;color:#f7e6bd;font:300 1.4rem/1 var(--sans);cursor:pointer}
 <section class="sec fin" id="fin"><h2 class="rv">Cảm ơn thầy cô<br>vì tất cả</h2>
 <p class="sub rv">Vì những bài học còn ở lại, và vì những ngày thầy cô vẫn đứng đó.</p>
 <button class="btn rv" id="heart" type="button">Gửi một trái tim</button></section>
-<p class="ft">Tống Đức Giang · Lớp 10A8 · 20.11</p>
+<p class="ft">La Minh Khánh · Lớp 10A8 · 20.11</p>
 <div class="intro" id="intro" role="button" tabindex="0" aria-label="Bắt đầu">
   <div><div class="foil">20.11</div><p>Chạm để bắt đầu</p></div>
 </div>
@@ -429,17 +378,6 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isInte
   if(t.id==='fin'){show(7);confetti(W/2,H*.7,80)}})},{threshold:.2});
 document.querySelectorAll('.wc,.rv,b[data-n],#fin').forEach(function(el){io.observe(el)});
 $('#heart').addEventListener('click',function(){var r=this.getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2;burst(x,y,60,340);confetti(x,y,70);show(4);arp();vib([30,40,30])});
-
-/* ---- khoảnh khắc: xem ảnh lớn + video ---- */
-var lb=$('#lb'),lbi=$('#lbimg');
-document.querySelectorAll('.ph').forEach(function(b){b.addEventListener('click',function(){
-  var im=b.querySelector('img');lbi.src=im.src;lbi.alt=im.alt;lb.showModal()})});
-lb.addEventListener('click',function(e){if(e.target===lb||e.target.closest('.lbx'))lb.close()});
-var vs=document.querySelectorAll('.vd video');
-vs.forEach(function(v){
-  v.addEventListener('play',function(){v.parentNode.classList.add('on');vs.forEach(function(o){if(o!==v)o.pause()});
-    au.pause();clearInterval(sTimer);mode='';ui(false)});
-  v.addEventListener('ended',function(){v.parentNode.classList.remove('on')})});
 })();
 </script>
 </body>
